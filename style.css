@@ -30,13 +30,13 @@ h1,h2{
     color: blue;
 }
 
-.About-Me{
+.about-me {
     background-color: grey;
     padding: 2px 4px;
     vertical-align: text-bottom;
 }
 
-.projects{
+.projects {
     background-color: #d3d3d3;
 }
 
