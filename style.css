@@ -3,7 +3,7 @@
     --primary-color: #000000;
     --primary-bg-color: #d3d3d3;
     --light-color: #fff;
-    --pop-color: #ff2800;
+    --pop-color: #3E8DE3;
 }
 
 /*================================================*/
@@ -24,12 +24,14 @@ h2{
 
 h1,h2{
     /*change*/
-    color: blue;
+    color: var(--pop-color);
 }
 
 /*Section*/
-.about-me,.projects,.contact {
+.about-me, .projects, .contact {
     background-color: var(--primary-bg-color);
+    padding: 2px 2px;
+
 }
 
 /*nav*/
