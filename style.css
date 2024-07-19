@@ -29,7 +29,7 @@ h1,h2{
 
 /*Section*/
 .about-me,.projects,.contact {
-    background-color: #d3d3d3;
+    background-color: var(--primary-bg-color);
 }
 
 /*nav*/
