@@ -28,16 +28,8 @@ h1,h2{
 }
 
 /*Section*/
-.about-me {
-    background-color: burlywood;
-}
-
-.projects {
+.about-me,.projects,.contact {
     background-color: #d3d3d3;
-}
-
-.contact{
-    background-color: aliceblue;
 }
 
 /*nav*/
