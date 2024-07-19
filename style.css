@@ -30,6 +30,12 @@ h1,h2{
     color: blue;
 }
 
+main{
+    background: #eee;
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+}
+
 /*nav*/
 
 
