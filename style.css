@@ -30,10 +30,18 @@ h1,h2{
     color: blue;
 }
 
-main{
-    background: grey;
+.About-Me{
+    background-color: grey;
     padding: 2px 4px;
     vertical-align: text-bottom;
+}
+
+.projects{
+    background-color: #d3d3d3;
+}
+
+.contact{
+    background-color: aliceblue;
 }
 
 /*nav*/
