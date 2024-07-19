@@ -5,6 +5,7 @@
     --section-bg-color:grey;
     --light-color: #fff;
     --pop-color: #3E8DE3;
+    --text-color: #555;
 }
 
 /*================================================*/
@@ -16,7 +17,7 @@ body {
     font-family: Arial, sans-serif;
     padding: 4em 1em;
     line-height: 1.5;
-    color: #555;
+    color: var(--text-color);
 }
 
 h2{
@@ -50,6 +51,7 @@ nav ul{
 
 nav ul li{
     display: inline;
+    margin-right: 20px;
 }
 
 
