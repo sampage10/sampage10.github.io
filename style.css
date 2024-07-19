@@ -15,6 +15,7 @@ body {
     font-family: Arial, sans-serif;
     padding: 4em 1em;
     line-height: 1.5;
+    color: #555;
 }
 
 h2{
@@ -35,7 +36,16 @@ h1,h2{
 }
 
 /*nav*/
+nav img{
+    width: 100px;
+    height: auto;
+    margin-left: 20 px;
+    margin-right: auto;
+}
 
+nav ul li{
+    display: inline;
+}
 
 
 /*contact*/
