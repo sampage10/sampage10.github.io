@@ -15,9 +15,6 @@ body {
     font-family: Arial, sans-serif;
     padding: 4em 1em;
     line-height: 1.5;
-
-    background: var(--primary-color);
-    color: #333;
 }
 
 h2{
