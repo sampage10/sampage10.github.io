@@ -2,6 +2,7 @@
 :root{
     --primary-color: #000000;
     --primary-bg-color: #d3d3d3;
+    --section-bg-color:grey;
     --light-color: #fff;
     --pop-color: #3E8DE3;
 }
@@ -30,7 +31,7 @@ h1,h2{
 
 /*Section*/
 .about-me, .projects, .contact {
-    background-color: var(--primary-bg-color);
+    background-color: var(--section-bg-color);
     padding: 2px 2px;
 
 }
@@ -41,6 +42,10 @@ nav img{
     height: auto;
     margin-left: 20 px;
     margin-right: auto;
+}
+
+nav ul{
+    list-style-type: none;
 }
 
 nav ul li{
