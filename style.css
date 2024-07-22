@@ -46,7 +46,6 @@ h1,h2{
 .right{
     width: 25%;
     display: flex;
-    align-items: center;
     justify-content: center;
 
 }
