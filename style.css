@@ -19,11 +19,11 @@ body {
     line-height: 1.5;
     color: var(--text-color);
 }
-
+/*
 h2{
     margin-top: 1em;
     padding-top: 1em;
-}
+}*/
 
 h1,h2{
     /*change*/
@@ -58,6 +58,11 @@ h1,h2{
 }
 
 /*nav*/
+nav{
+    display: flex;
+    align-items: center;
+}
+
 nav img{
     width: 100px;
     height: auto;
@@ -79,3 +84,9 @@ nav ul li{
 
 
 /*footer*/
+footer{
+    bottom:0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
