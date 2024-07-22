@@ -34,6 +34,7 @@ h1,h2{
 .container {
     display: flex;
     height: 100vh;
+    text-align: center;
 }
 /*left*/
 .left{
