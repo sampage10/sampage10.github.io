@@ -38,13 +38,13 @@ h1,h2{
 }
 /*left*/
 .left{
-    width: 75%;
+    width: 60%;
     display: flex;
     flex-direction: column;
 }
 /*right*/
 .right{
-    width: 25%;
+    width: 40%;
     display: flex;
     justify-content: center;
 
