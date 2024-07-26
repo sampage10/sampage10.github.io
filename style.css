@@ -81,6 +81,10 @@ nav ul li{
 
 nav ul li a{
     transition: all 0.3s ease 0s;
+    color: #d3d3d3;
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
 }
 
 nav ul li a:hover{
