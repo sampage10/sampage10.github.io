@@ -36,7 +36,7 @@ h1,h2{
     height: 100vh;
     text-align: center;
 }
-/*left*/
+/*content*/
 .content{
     display: flex;
     flex-direction: column;
