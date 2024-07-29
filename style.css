@@ -46,7 +46,7 @@ h1,h2{
 /*Section*/
 .about-me, .projects, .contact, .skills {
     background-color: var(--section-bg-color);
-    padding: 2px 2px;
+    padding: 2px;
     margin: 10px;
 
 }
@@ -60,7 +60,7 @@ nav{
 nav img{
     width: 100px;
     height: auto;
-    margin-left: 20 px;
+    margin-left: 20px;
     margin-right: auto;
 }
 
@@ -70,7 +70,7 @@ nav ul{
 
 nav ul li{
     display: inline;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 nav ul li a{
