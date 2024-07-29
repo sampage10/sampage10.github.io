@@ -42,8 +42,18 @@ h1,h2{
     flex-direction: column;
 }
 
+/*home page*/
 .home-page {
     height: 100vh;
+}
+
+.buttons-home .button {
+    background-color: var(--pop-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 /*Section*/
