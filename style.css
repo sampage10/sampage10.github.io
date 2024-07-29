@@ -42,6 +42,10 @@ h1,h2{
     flex-direction: column;
 }
 
+.home-page {
+    height: 100vh;
+}
+
 /*Section*/
 .about-me, .projects, .contact, .skills {
     background-color: var(--section-bg-color);
