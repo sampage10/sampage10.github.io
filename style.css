@@ -63,12 +63,13 @@ h1,h2{
 }
 
 /*Section*/
-.about-me, .projects, .contact, .skills {
+
+/*.about-me, .projects, .contact, .skills {
     background-color: var(--section-bg-color);
     padding: 2px;
     margin: 10px;
 
-}
+}*/
 
 /*nav*/
 header {
