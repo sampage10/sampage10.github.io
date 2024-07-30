@@ -33,7 +33,7 @@ h1,h2{
 .container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /*height: 100vh;*/
     text-align: center;
 }
 /*content*/
@@ -71,6 +71,16 @@ h1,h2{
 }
 
 /*nav*/
+header {
+    background-color: var(--primary-bg-color);
+    padding: 0 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 100px;
+}
+
 nav{
     display: flex;
     align-items: center;
