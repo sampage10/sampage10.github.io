@@ -39,10 +39,16 @@ h1,h2{
 .content{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*home page*/
 .home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 
