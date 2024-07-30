@@ -14,7 +14,7 @@
 body {
     margin:0 auto;
     max-width: 50 em;
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     padding: 4em 1em;
     line-height: 1.5;
     color: var(--text-color);
@@ -26,8 +26,7 @@ h2{
 }*/
 
 h1,h2{
-    /*change*/
-    color: var(--pop-color);
+    color: var(--primary-color);
 }
 
 /*container*/
