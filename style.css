@@ -62,14 +62,14 @@ h1,h2{
     border-radius: 5px;
 }
 
-/*Section*/
-
-/*.about-me, .projects, .contact, .skills {
-    background-color: var(--section-bg-color);
-    padding: 2px;
-    margin: 10px;
-
-}*/
+/*about*/
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display:block;
+    margin: 20px auto;
+}
 
 /*nav*/
 header {
@@ -79,6 +79,7 @@ header {
     top: 0;
     z-index: 999;
     height: 75px;
+    padding: 0 20px;
 }
 
 nav{
