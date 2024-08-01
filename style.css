@@ -126,12 +126,12 @@ nav ul li a:hover{
     margin: 20px 0;
 }
 
-.contact-links a {
+.contact-link {
     color: var(--primary-color);
     font-size: 2em;
 }
 
-.contact-links a:hover {
+.contact-link:hover {
     color: var(--text-color);
 }
 
