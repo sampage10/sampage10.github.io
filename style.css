@@ -71,6 +71,29 @@ h1,h2{
     margin: 20px auto;
 }
 
+/*skills*/
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    width: 30%;
+    border: 1px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skills-title {
+    background-color: var(--pop-color);
+    color: var(--light-color);
+}
+
+.skills-content{
+    background-color: var(--light-color);
+    list-style-type: none;
+}
+
 /*nav*/
 header {
     background-color: var(--light-color);
