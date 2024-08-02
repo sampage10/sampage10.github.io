@@ -150,6 +150,7 @@ nav ul li a:hover{
     background-color: var(--primary-bg-color);
     border-radius: 20px;
     color: var(--text-color);
+    margin: 5px 0;
 }
 
 /*projects*/
