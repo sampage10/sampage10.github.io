@@ -133,11 +133,13 @@ nav ul li a:hover{
     background-color: var(--pop-color);
     color: var(--light-color);
     text-align: center;
+    padding: 10px;
 }
 
 .skills-content{
     background-color: var(--light-color);
     list-style-type: none;
+    text-align: center;
 }
 
 /*projects*/
