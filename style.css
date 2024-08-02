@@ -146,6 +146,12 @@ nav ul li a:hover{
 
 }
 
+.project-content {
+    background-color: var(--primary-bg-color);
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
 /*contact*/
 .contact-links {
     display: flex;
