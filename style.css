@@ -127,17 +127,19 @@ nav ul li a:hover{
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    text-align: center;
 }
 
 .skills-title {
-    background-color: var(--pop-color);
-    color: var(--light-color);
+    color: var(--pop-color);
     text-align: center;
     padding: 10px;
 }
 
 .skills-content{
-    background-color: var(--light-color);
+    padding: 0;
+    margin: 0;
     list-style-type: none;
     text-align: center;
 }
