@@ -37,7 +37,7 @@ header {
     z-index: 999;
     height: 75px;
     padding: 0 20px;
-    border-bottom: #555;
+    border-bottom: 1px solid #555;
 }
 
 nav{
@@ -63,7 +63,7 @@ nav ul li{
 
 nav ul li a{
     transition: all 0.3s ease 0s;
-    color: #d3d3d3;
+    color: var(--text-color);
     font-size: 15px;
     font-weight: 200;
     text-decoration: none;
@@ -71,7 +71,7 @@ nav ul li a{
 
 nav ul li a:hover{
     transition: all 0.3s ease 0s;
-    color: #555;
+    color: var(--primary-color);
 }
 
 /*container*/
@@ -124,11 +124,12 @@ nav ul li a:hover{
 
 .box{
     width: 30%;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--text-color);
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .skills-title {
@@ -142,6 +143,13 @@ nav ul li a:hover{
     margin: 0;
     list-style-type: none;
     text-align: center;
+}
+
+.skills-content li {
+    padding: 5px 10px;
+    background-color: var(--primary-bg-color);
+    border-radius: 20px;
+    color: var(--text-color);
 }
 
 /*projects*/
