@@ -124,7 +124,7 @@ nav ul li a:hover{
 
 .box{
     width: 30%;
-    border: 1px;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     overflow: hidden;
 }
@@ -132,6 +132,7 @@ nav ul li a:hover{
 .skills-title {
     background-color: var(--pop-color);
     color: var(--light-color);
+    text-align: center;
 }
 
 .skills-content{
@@ -142,7 +143,7 @@ nav ul li a:hover{
 /*projects*/
 .project-container {
     display: flex;
-    
+
 }
 
 /*contact*/
