@@ -159,6 +159,7 @@ nav ul li a:hover{
 /*projects*/
 .project-container {
     display: flex;
+    gap: 20px;
 
 }
 
@@ -166,6 +167,9 @@ nav ul li a:hover{
     background-color: var(--primary-bg-color);
     width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    padding: 15px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 /*contact*/
