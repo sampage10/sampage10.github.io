@@ -120,6 +120,7 @@ nav ul li a:hover{
 .skills {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .box{
@@ -136,6 +137,7 @@ nav ul li a:hover{
     color: var(--pop-color);
     text-align: center;
     padding: 10px;
+    margin: 0;
 }
 
 .skills-content{
@@ -151,6 +153,7 @@ nav ul li a:hover{
     border-radius: 20px;
     color: var(--text-color);
     margin: 5px 0;
+    display: inline-block;
 }
 
 /*projects*/
