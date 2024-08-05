@@ -37,7 +37,7 @@ header {
     z-index: 999;
     height: 75px;
     padding: 0 20px;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid var(--primary-bg-color);
 }
 
 nav{
@@ -107,14 +107,15 @@ nav ul li a:hover{
     border-radius: 5px;
 }
 
-/*about*/
 .profile-pic {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     display:block;
     margin: 20px auto;
 }
+
+/*about*/
 
 /*skills*/
 .skills {
@@ -181,7 +182,7 @@ nav ul li a:hover{
 }
 
 .contact-link {
-    color: var(--primary-color);
+    color: var(--pop-color);
     font-size: 2em;
 }
 
