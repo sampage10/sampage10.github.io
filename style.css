@@ -107,6 +107,10 @@ nav ul li a:hover{
     border-radius: 5px;
 }
 
+.buttons-home .button:hover {
+    background-color: var(--primary-bg-color);
+}
+
 .profile-pic {
     width: 120px;
     height: 120px;
