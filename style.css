@@ -1,11 +1,13 @@
 /*Variables*/
 :root {
     --primary-color: #000000;
-    --primary-bg-color: #d3d3d3;
-    --section-bg-color:rgb(196, 196, 196);
+    /*--primary-bg-color: #d3d3d3;*/
     --light-color: #fff;
     --pop-color: #3E8DE3;
     --text-color: #555;
+    --border-color: #d3d3d3;
+    /*test*/
+    --hover-color: #000080;
 }
 
 /*================================================*/
@@ -37,7 +39,7 @@ header {
     z-index: 999;
     height: 75px;
     padding: 0 20px;
-    border-bottom: 1px solid var(--primary-bg-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav{
@@ -87,7 +89,7 @@ nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    /*padding: 20px;*/
 }
 
 /*home page*/
@@ -155,7 +157,7 @@ nav ul li a:hover{
 
 .skills-content li {
     padding: 5px 5px;
-    background-color: var(--primary-bg-color);
+    background-color: var(--border-color);
     border-radius: 20px;
     color: var(--text-color);
     margin: 5px 0;
@@ -170,7 +172,7 @@ nav ul li a:hover{
 }
 
 .project-content {
-    background-color: var(--primary-bg-color);
+    background-color: var(--border-color);
     width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
     padding: 15px;
