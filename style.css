@@ -133,7 +133,7 @@ nav ul li a:hover{
 
 .box{
     width: 30%;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
