@@ -21,23 +21,6 @@ body {
     color: var(--text-color);
 }
 
-body.dark-mode {
-    --primary-color: #fff;
-    /*--primary-bg-color: #d3d3d3;*/
-    --light-color: #000000;
-    --pop-color: #3E8DE3;
-    --text-color: #555;
-    --border-color: #d3d3d3;
-    /*test*/
-    --hover-color: #000080;
-}
-
-/*
-h2{
-    margin-top: 1em;
-    padding-top: 1em;
-}*/
-
 h1,h2{
     color: var(--primary-color);
 }
@@ -68,11 +51,8 @@ nav img{
 
 nav ul{
     list-style-type: none;
-}
-
-nav ul li{
     display: inline;
-    padding: 0 20px;
+    gap: 20px;
 }
 
 nav ul li a{
@@ -84,7 +64,6 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    transition: all 0.3s ease 0s;
     color: var(--primary-color);
 }
 
