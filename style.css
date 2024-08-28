@@ -20,6 +20,18 @@ body {
     line-height: 1.5;
     color: var(--text-color);
 }
+
+body.dark-mode {
+    --primary-color: #fff;
+    /*--primary-bg-color: #d3d3d3;*/
+    --light-color: #000000;
+    --pop-color: #3E8DE3;
+    --text-color: #555;
+    --border-color: #d3d3d3;
+    /*test*/
+    --hover-color: #000080;
+}
+
 /*
 h2{
     margin-top: 1em;
