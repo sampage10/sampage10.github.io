@@ -19,6 +19,12 @@ body {
     font-family: Helvetica, sans-serif;
     line-height: 1.5;
     color: var(--text-color);
+    background-color: var(--light-color);
+}
+
+.dark-mode{
+    background-color: var(--primary-color);
+    color: var(--border-color);
 }
 
 h1,h2{
@@ -27,7 +33,7 @@ h1,h2{
 
 /*nav*/
 header {
-    background-color: var(--light-color);
+    /*background-color: var(--light-color);*/
     width: 100%;
     position: fixed;
     top: 0;
@@ -61,7 +67,7 @@ nav ul li{
 
 nav ul li a{
     transition: all 0.3s ease 0s;
-    color: var(--text-color);
+    /*color: var(--text-color);*/
     font-size: 15px;
     font-weight: 200;
     text-decoration: none;
