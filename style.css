@@ -51,7 +51,11 @@ nav img{
 
 nav ul{
     list-style-type: none;
+}
+
+nav ul li{
     display: inline;
+    padding: 0 20px;
     gap: 20px;
 }
 
