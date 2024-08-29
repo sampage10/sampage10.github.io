@@ -22,7 +22,7 @@ body {
     background-color: var(--light-color);
 }
 
-.dark-mode{
+body.dark-mode{
     background-color: var(--primary-color);
     color: var(--border-color);
 }
