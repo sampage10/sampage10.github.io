@@ -33,7 +33,7 @@ h1,h2{
 
 /*nav*/
 header {
-    /*background-color: var(--light-color);*/
+    background-color: var(--light-color);
     width: 100%;
     position: fixed;
     top: 0;
