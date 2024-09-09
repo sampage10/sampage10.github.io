@@ -194,7 +194,8 @@ nav ul li a:hover{
 .project-container {
     display: flex;
     gap: 20px;
-
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-content {
