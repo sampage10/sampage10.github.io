@@ -22,10 +22,22 @@ body {
     background-color: var(--light-color);
 }
 
-body.dark-mode{
+body.dark-mode {
+    --primary-color: #fff;
+    /*--primary-bg-color: #d3d3d3;*/
+    --light-color: #000000;
+    --pop-color: #3E8DE3;
+    --text-color: #d3d3d3;
+    --border-color: #555;
+    /*test*/
+    --hover-color: #000080;
+}
+
+/*body.dark-mode{
     background-color: var(--primary-color);
     color: var(--border-color);
 }
+    */
 
 h1,h2{
     color: var(--primary-color);
