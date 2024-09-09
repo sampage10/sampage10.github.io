@@ -59,6 +59,7 @@ header {
     height: 75px;
     padding: 0 20px;
     border-bottom: 1px solid var(--border-color);
+    box-sizing: border-box;
 }
 
 nav{
