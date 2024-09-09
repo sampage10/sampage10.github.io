@@ -33,6 +33,10 @@ body.dark-mode {
     --hover-color: #000080;
 }
 
+body.dark-mode #logo{
+    content: url('logo-dark.png');
+}
+
 /*body.dark-mode{
     background-color: var(--primary-color);
     color: var(--border-color);
