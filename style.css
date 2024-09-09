@@ -14,7 +14,7 @@
 /*Body*/
 body {
     margin:0;
-    padding: 0;
+    padding: 0 20px;
     max-width: 50 em;
     font-family: Helvetica, sans-serif;
     line-height: 1.5;
@@ -146,9 +146,6 @@ nav ul li a:hover{
 }
 
 /*about*/
-.about {
-    padding: 0 20px;
-}
 
 /*skills*/
 .skills {
