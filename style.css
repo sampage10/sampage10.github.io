@@ -107,7 +107,7 @@ nav ul li a:hover{
     flex-direction: column;
     /*height: 100vh;*/
     text-align: center;
-    padding: 0 20px;
+    padding: 10px;
 }
 /*content*/
 .content{
@@ -196,6 +196,20 @@ nav ul li a:hover{
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .project-content{
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .project-content{
+        width: 30%;
+    }
 }
 
 .project-content {
