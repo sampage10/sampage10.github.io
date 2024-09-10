@@ -9,3 +9,5 @@ function updateIcon() {
     const iconClass = body.classList.contains('dark-mode') ? 'fa-sun' : 'fa-moon';
     themeButton.innerHTML = `<i class="fa-regular ${iconClass}"></i>`;
 }
+
+updateIcon();
