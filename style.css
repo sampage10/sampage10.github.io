@@ -119,6 +119,11 @@ nav ul li a:hover{
     padding: 10px;
 }
 
+.project1image {
+    width: 250px;
+    height: auto;
+}
+
 /*content*/
 .content{
     display: flex;
