@@ -22,29 +22,29 @@
         </header>
 
 
-        <div class="container">
+        <div class="project1Container">
             <h1>Project 1 Data Mining</h1>
             <h2>Intro to Problem</h2>
             <p>In Project 1 I analyze the success of an NFL team in the regular season based on 35 features in my dataset. I want to figure out what factors are indicators of success over the course of a season.</p>
             <h2>Intro to Data</h2>
-            <p>Data Set: https://www.kaggle.com/datasets/nickcantalupa/nfl-team-data-2003-2023</p>
+            <p><a href="https://www.kaggle.com/datasets/nickcantalupa/nfl-team-data-2003-2023">Data Set: https://www.kaggle.com/datasets/nickcantalupa/nfl-team-data-2003-2023</a></p>
             <p>This data set is taken from Kaggle and includes regular-season statistics for all NFL teams from 2003-2023. There are 35 features all providing unique insights into success. The most useful features are wins, losses, points for, points against, average margin of victory, total yards, number of offensive plays, yards per play on offense, total turnovers, total takeaways, first downs gained, and penalties committed. </p>
             <h2>Pre-processing</h2>
             <p>My data was very complete and accurate so it didn't need much preprocessing. For pre-processing, I first check for null values. There were 320 nulls in the average margin of victory feature which I calculated with point differential divided by games played. There were 352 nulls for ties which were null because the team had no ties so I filled those with 0. I checked for duplicates and there were none.</p>
             <h2>Data Visualization</h2>
             <p>First I printed the results of a correlation matrix between win-loss ratio and all other factors. I then generated a smaller correlation matrix to visualize which factors had the most effect on the win-loss percentage.</p>
-            <img src="visualization1.jpg" alt="visualization1">
+            <img src="images/visualization1.jpg" alt="visualization1">
             <p>The most strongly correlated factors were scoring related with a strong positive correlation between points scored and win-loss percentage.</p>
-            <img src="visualization2.jpg" alt="visualization2">
+            <img src="images/visualization2.jpg" alt="visualization2">
             <p>And a strong negative correlation between points allowed and win-loss rate.</p>
-            <img src="visualization3.jpg" alt="visualization3">
+            <img src="images/visualization3.jpg" alt="visualization3">
             <p>Next, I plot points scored against points allowed to see which is more important. Each dot is a certain color to represent the team's win-loss percentage with the darker dots being a more successful team. The graph shows a pretty even spread with only a few outliers which are successful teams who allowed more than average points and stayed successful or scored less than average points and were still successful.</p>
-            <img src="visualization4.jpg" alt="visualization4">
+            <img src="images/visualization4.jpg" alt="visualization4">
             <p>Scoring on offense and not getting scored on when on defense seems to be an obvious factor in winning and losing so I switched focus to features not related to scoring.</p>
             <p>This graph shows a positive correlation between pass yards per attempt and win-loss rate. The points are different colors based on how many passing touchdowns the team scored in a year to add another dimension to this visualization.</p>
-            <img src="visualization5.jpg" alt="visualization5">
+            <img src="images/visualization5.jpg" alt="visualization5">
             <p>The next graph shows almost no correlation between run yards per attempt and win-loss rate. While all of the 30 rush touchdown seasons belong to teams with over 4.5 yards per rush attempt many teams had a higher win-loss ratio with fewer yards per rush.</p>
-            <img src="visualization6.jpg" alt="visualization6">
+            <img src="images/visualization6.jpg" alt="visualization6">
             <h2>Storytelling</h2>
             <p>The first 2 graphs show the importance of scoring points and not allowing the opposition to score. That might seem obvious as football is a score-based game and the only way to win is to score more points than the other team. However, as the 3rd graph shows there is more to learn from this data. Very few teams can put together a winning season with a good defense and a low-scoring offense. Even fewer can have a winning season with a bad defense and a high-scoring offense. NFL teams have limited resources and a salary cap. These visuals prove that teams should put roughly equal emphasis and resources on offense and defense or slightly more emphasis on defense.</p>
             <p>The 4th graph shows that team success is highly correlated with pass yards per attempt. Interestingly the 5th graph shows almost no correlation between rush yards per attempt and team success. I attribute this to run plays being used more strategically and less for scoring. I believe this shows that play call(choice of play) on offense matters just as much if not more than the athletic ability of the QB.</p>

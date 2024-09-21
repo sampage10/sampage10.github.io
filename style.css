@@ -109,6 +109,16 @@ nav ul li a:hover{
     text-align: center;
     padding: 10px;
 }
+
+.project1Container {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    /*height: 100vh;*/
+    text-align: center;
+    padding: 10px;
+}
+
 /*content*/
 .content{
     display: flex;
