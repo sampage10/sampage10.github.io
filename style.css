@@ -120,6 +120,7 @@ nav ul li a:hover{
 }
 
 .project1image {
+    display: flex;
     width: 500px;
     height: auto;
     justify-content: center;
