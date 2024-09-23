@@ -123,6 +123,7 @@ nav ul li a:hover{
     width: 500px;
     height: auto;
     justify-content: center;
+    align-items: center;
 }
 
 /*content*/
