@@ -120,8 +120,9 @@ nav ul li a:hover{
 }
 
 .project1image {
-    width: 250px;
+    width: 500px;
     height: auto;
+    justify-content: center;
 }
 
 /*content*/
