@@ -6,7 +6,7 @@ document.getElementById('theme').addEventListener('click', function(){
 const themeButton = document.getElementById('theme');
 
 function updateIcon() {
-    const iconClass = body.classList.contains('dark-mode') ? 'fa-sun' : 'fa-moon';
+    const iconClass = document.body.classList.contains('dark-mode') ? 'fa-sun' : 'fa-moon';
     themeButton.innerHTML = `<i class="fa-regular ${iconClass}"></i>`;
 }
 
