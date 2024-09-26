@@ -107,6 +107,10 @@ nav ul li a:hover{
     color: var(--primary-color);
 }
 
+#about, #projects, #container {
+    scroll-margin-top: 80px;
+}
+
 /*container*/
 .container {
     display: flex;
@@ -161,7 +165,7 @@ nav ul li a:hover{
 }
 
 .buttons-home .button:hover {
-    background-color: var(--text-color);
+    background-color: var(--hover-color);
 }
 
 .profile-pic {
@@ -259,7 +263,7 @@ nav ul li a:hover{
 }
 
 .contact-link:hover {
-    color: var(--text-color);
+    color: var(--hover-color);
 }
 
 /*footer*/
