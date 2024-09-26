@@ -45,9 +45,13 @@ body.dark-mode #theme i.fa-sun {
     transform: rotate(360deg);
 }
 
-#theme i.fa-moon {
-    color: var(--light-color);
-    background-color: none;
+#theme{
+    border: none;
+    background: none;
+    padding: 0;
+}
+#theme i {
+    color: var(--text-color);
     transform: rotate(360deg);
 }
 
