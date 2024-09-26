@@ -46,7 +46,7 @@ body.dark-mode #theme i.fa-sun {
 }
 
 #theme {
-    border: none;
+    border: 1px solid var(--text-color);
     background: none;
     padding: 0;
 }
