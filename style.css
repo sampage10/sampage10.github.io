@@ -53,7 +53,7 @@ body.dark-mode #theme i.fa-sun {
 
 #theme i {
     color: var(--text-color);
-    transform: rotate(360deg);
+    transition: color 0.3s;
     font-size: 30px;
 }
 
