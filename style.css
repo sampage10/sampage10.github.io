@@ -107,7 +107,7 @@ nav ul li a:hover{
     color: var(--primary-color);
 }
 
-#about, #projects, #container {
+#section1, #section2, #section3 {
     scroll-margin-top: 80px;
 }
 
