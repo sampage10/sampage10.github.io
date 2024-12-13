@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sam Page Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/26aa5c6c34.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="images/logo.JPEG">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.JPEG" alt="logo" id="logo">
+                </a>
+                <ul>
+                    <li><a href="#section1">About</a></li>
+                    <li><a href="#section2">Projects</a></li>
+                    <li><a href="#section3">Contact</a></li>
+                </ul>
+                <button id="theme">
+                    <i class="fa-regular fa-moon"></i>
+                </button>
+            </nav>
+        </header>
+
+
+        <div class="project1Container">
+            <h1>Project 3 Data Mining</h1>
+            <h2>Intro to Problem</h2>
+            <p>In Project 2 I use the same data set as Project 1 for a binary classification problem classifying NFL teams into groups of winning teams and losing teams. My winning group has a win-loss percentage of 70% or higher. I classify the teams based on regular season statistics by 35 features in my dataset. I want to figure out how successful teams will be based on regular season statistics.</p>
+            <h2>Intro to Data</h2>
+            <p><a href="https://www.kaggle.com/datasets/nickcantalupa/nfl-team-data-2003-2023">Data Set: https://www.kaggle.com/datasets/nickcantalupa/nfl-team-data-2003-2023</a></p>
+            <p>This data set is taken from Kaggle and includes regular-season statistics for all NFL teams from 2003-2023. There are 35 features all providing unique insights into success. The most useful features are wins, losses, points for, points against, average margin of victory, total yards, number of offensive plays, yards per play on offense, total turnovers, total takeaways, first downs gained, and penalties committed. I exclude wins and losses as those are the categories by which my model will classify teams.</p>
+            <h2>Pre-processing</h2>
+            <p>My data was very complete and accurate so it didn't need much preprocessing. For pre-processing, I first check for null values. There were 320 nulls in the average margin of victory feature which I calculated with point differential divided by games played. There were 352 nulls for ties which were null because the team had no ties so I filled those with 0. I checked for duplicates and there were none.</p>
+            <h2>Data Visualization</h2>
+            <p>The best visualization for this classification problem is this correlation matrix, which visualizes which factors had the most effect on the win-loss percentage. I predict these factors will be the most important factors in my classification algorithms for example nodes in my decision trees.</p>
+            <img src="images/visualization1.jpg" alt="visualization1" class="project1image">
+            <h2>Modeling</h2>
+            <p>I chose to go with a Random Forest classification system because it allows multiple routes to be classified as a successful team and works well with a large number of features. I though this would be great because you can be a winning team with great defense paired with a bad offense or great offense paired with a bad defense or just above average in both.
+                The first few times I ran the random forest generator the accuracy was 100% because my features were too descriptive. I removed all features relating to wins, losses, and scoring.</p>
+            <img src="images/project5.png" alt="model_code" class="project1image">
+            <h2>Evaluation</h2>
+            <img src="images/project4eval.png" alt="model_evaluation" class="project1image">
+            <img src="images/project4conf.png" alt="model confusion matrix" class="project1image">
+            <h2>Storytelling</h2>
+            <p>Through this project, I learned that machine learning can very accurately predict the success of a team based on team stats. With a few weeks of data or data from a previous season a person or a machine learning model should be able to predict team success or point out important factors holding a team back. There are many variable and unforeseen obstacles in sports(injuries, trades, team energy, etc) that the model can not predict so the model should not be relied on 100%.</p>
+            <h2>Impact</h2>
+            <p>This shows that while many people in sports, players, and fans are very superstitious, the root of success is in the data. My model could be used by teams to find out what is making a team successful or what is holding them back. It could also be used by bettors to bet on futures(the winner of and event or award in the future) as sports betting is one of the fastest growing industries in the US right now.</p>
+            <h2>References</h2>
+            <p><a href="https://www.geeksforgeeks.org/random-forest-classifier-using-scikit-learn/">https://www.geeksforgeeks.org/random-forest-classifier-using-scikit-learn/ </a></p>
+            <p><a href="https://www.thelines.com/betting/futures/#:~:text=A%20futures%20bet%20is%20a,day%20the%20wager%20is%20placed. ">https://www.thelines.com/betting/futures/ </a></p>
+            <h2>Code</h2>
+            <p><a href="3162Project2.ipynb" download>Download JupyterNotebook Here</a></p>
+        </div>
+        
+        <footer>
+            <p class="font-sm center-text">&copy;2024 SPAGE</p>
+        </footer>
+        
+    </body>
+    <script src="script.js"></script>
+</html>
