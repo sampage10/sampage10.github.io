@@ -27,31 +27,65 @@
 
 
         <div class="project1Container">
-            <h1>Project 3 Data Mining</h1>
+            <h1>Final Project Data Mining</h1>
             <h2>Intro to Problem</h2>
-            <p>In Project 2 I use the same data set as Project 1 for a binary classification problem classifying NFL teams into groups of winning teams and losing teams. My winning group has a win-loss percentage of 70% or higher. I classify the teams based on regular season statistics by 35 features in my dataset. I want to figure out how successful teams will be based on regular season statistics.</p>
+            <p>Predicting Spotify Top Hits: A Machine Learning Approach to Song Popularity</p>
             <h2>Intro to Data</h2>
-            <p><a href="https://www.kaggle.com/datasets/nickcantalupa/nfl-team-data-2003-2023">Data Set: https://www.kaggle.com/datasets/nickcantalupa/nfl-team-data-2003-2023</a></p>
-            <p>This data set is taken from Kaggle and includes regular-season statistics for all NFL teams from 2003-2023. There are 35 features all providing unique insights into success. The most useful features are wins, losses, points for, points against, average margin of victory, total yards, number of offensive plays, yards per play on offense, total turnovers, total takeaways, first downs gained, and penalties committed. I exclude wins and losses as those are the categories by which my model will classify teams.</p>
+            <p><a href="https://www.kaggle.com/datasets/paradisejoy/top-hits-spotify-from-20002019/data">Data Set: https://www.kaggle.com/datasets/paradisejoy/top-hits-spotify-from-20002019/data</a></p>
+            <p>Our data comes from the “Top Hits Spotify from 2000-2019” dataset on Kaggle, collected by Mark Koverha. The data consists of roughly 1,900 entries across 18 features and is 254.99 kB in size. The first two columns identify variables, giving the artist’s name and song name. There are several variables that people can immediately identify, such as release year or genre, but 11 of the variables give numerical values to elements of the song, such as “acousticness” or “liveness,” which are much harder to quantify.</p>
             <h2>Pre-processing</h2>
-            <p>My data was very complete and accurate so it didn't need much preprocessing. For pre-processing, I first check for null values. There were 320 nulls in the average margin of victory feature which I calculated with point differential divided by games played. There were 352 nulls for ties which were null because the team had no ties so I filled those with 0. I checked for duplicates and there were none.</p>
+            <p>My data was very complete and accurate so it didn't need much preprocessing. There were no nulls and we removed 59 duplicates. We also dropped 3 irrelevant columns.</p>
             <h2>Data Visualization</h2>
-            <p>The best visualization for this classification problem is this correlation matrix, which visualizes which factors had the most effect on the win-loss percentage. I predict these factors will be the most important factors in my classification algorithms for example nodes in my decision trees.</p>
-            <img src="images/visualization1.jpg" alt="visualization1" class="project1image">
+            <p>The best visualizations for this data set were a genre distribution chart and correlation map</p>
+            <img src="images/finalvisualization1.jpg" alt="visualization1" class="project1image">
+            <img src="images/finalvisualization2.jpg" alt="visualization1" class="project1image">
             <h2>Modeling</h2>
-            <p>I chose to go with a Random Forest classification system because it allows multiple routes to be classified as a successful team and works well with a large number of features. I though this would be great because you can be a winning team with great defense paired with a bad offense or great offense paired with a bad defense or just above average in both.
-                The first few times I ran the random forest generator the accuracy was 100% because my features were too descriptive. I removed all features relating to wins, losses, and scoring.</p>
+            <h3>Random Forest</h3>
+            <img src="images/project5.png" alt="model_code" class="project1image">
+            <h3>Linear Regression</h3>
+            <img src="images/project5.png" alt="model_code" class="project1image">
+            <h3>Decision Tree</h3>
             <img src="images/project5.png" alt="model_code" class="project1image">
             <h2>Evaluation</h2>
             <img src="images/project4eval.png" alt="model_evaluation" class="project1image">
             <img src="images/project4conf.png" alt="model confusion matrix" class="project1image">
-            <h2>Storytelling</h2>
-            <p>Through this project, I learned that machine learning can very accurately predict the success of a team based on team stats. With a few weeks of data or data from a previous season a person or a machine learning model should be able to predict team success or point out important factors holding a team back. There are many variable and unforeseen obstacles in sports(injuries, trades, team energy, etc) that the model can not predict so the model should not be relied on 100%.</p>
+            <h2>Conclusion</h2>
+            <p>
+                Going back to the introduction, these were the three questions we were looking to answer:
+
+                What elements have the strongest impact in propelling songs to the top of the charts?
+                
+                What types of models best fit with our dataset and what metrics will be used to gain the most insight into our models?
+                
+                How do different feature selection methods impact model performance? What are the optimal features to place in ourmodel?
+                
+                So, was the data above able to answer these questions?
+                
+                Question 1
+                The best way to answer the first question would be to find the correlation between popularity and other elements in the heatmap shown above. These elements seem to have the highest correlation to popularity:
+                
+                Two genres had the highest scores, Pop and Dance/Electronic
+                Instrumentalness, Danceability, and Energy seem to have the top correlation scores.
+                As mentioned briefly in the introduction, it's difficult to use arbitrary elements, such as loudness or danceability, to quantify what makes a song popular. Each person hears music differently, and something that one person likes may be hated by another. However, using the methods above, the dataset showed these elements contribute the most to popularity. Surface level features like a familiar artist or popular genre may help the song get recognized, but these elements do not grant music it's staying power months or even years down the road.
+
+                One additional note I wanted to point out was the amount of correlation between genres. Whenever any genre is either mixed or classified as multiple genres, the correlation between those increases. Something to keep in mind.
+
+                Question 2
+                Of the created models, the Random Forest Regression model easily performed the best, able to predict within 14 points on average. Of the metrics used for analysis, the Mean Absolute Error (MAE) shows the clearest evidence that this model accurately predicts. Of the three models, the linear regression proved the least useful.
+
+                Question 3
+                While models were trained with various selections of features, we found that more data was always better when training our models. Even if the model did not favor the feature as a strong predictor, each variable had some weight with which it could impact the outcomes.
+
+                Were this research to be persued further, we would've liked to gain a more robust dataset, focusing on negatively reviewed music, instead of just the popular items. This may be able to give us even further insight into not only what elements to promote, but what elements could be deemed a waste of time
+            </p>
             <h2>Impact</h2>
-            <p>This shows that while many people in sports, players, and fans are very superstitious, the root of success is in the data. My model could be used by teams to find out what is making a team successful or what is holding them back. It could also be used by bettors to bet on futures(the winner of and event or award in the future) as sports betting is one of the fastest growing industries in the US right now.</p>
-            <h2>References</h2>
-            <p><a href="https://www.geeksforgeeks.org/random-forest-classifier-using-scikit-learn/">https://www.geeksforgeeks.org/random-forest-classifier-using-scikit-learn/ </a></p>
-            <p><a href="https://www.thelines.com/betting/futures/#:~:text=A%20futures%20bet%20is%20a,day%20the%20wager%20is%20placed. ">https://www.thelines.com/betting/futures/ </a></p>
+            <p>
+                An impact of this project could be a shift in how users of Spotify view genres of music. Some may see the overlap in correlation between genres and think that maybe not all songs advertised as a single genre are the same, and broaden their horizons regarding their listening. Others, may see the overlap and assume that everything is the same, and not listen to any other genre than pop. The beauty of music is in the variety, and the fact that there's so many options to choose from allows people to find something they really like, and only listen to that.
+
+                In theory, there could be no correlation between elements of songs, and how things are determined popular. It could just be how good someone is at creating music, making something catchy, and getting noticed at the right place at the right time. The impact of this could be null and void due to that, because modeling and machine learning sometimes isn't able to keep up with the randomness of humanity.
+
+                This could also go the other direction with the last point, and cause artists to only focus on the things that make their songs the most popular. If a song doesn't correlate to these arbitrary values, it will never be popular, and thus, never be made. That would be catastrophic for a creative industry, and could lead to a trend that kills all creativity at some point. The likelyhood of this happening is near-zero, but still possible.
+            </p>
             <h2>Code</h2>
             <p><a href="https://github.com/ryanshz/dm-final">View Our GitHub Here</a></p>
         </div>
