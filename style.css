@@ -54,7 +54,7 @@ body.dark-mode #theme i.fa-sun {
 
 #theme i {
     color: var(--text-color);
-    font-size: 160px;
+    font-size: 24px;
 }
 
 h1,h2{
