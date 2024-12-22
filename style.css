@@ -50,6 +50,7 @@ body.dark-mode #theme i.fa-sun {
     border-radius: 5px;
     background: none;
     padding: 5px 10px;
+    margin-right: 20px;
 }
 
 #theme i {
@@ -78,13 +79,21 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 nav img{
-    width: 60px;
+    width: 100px;
     height: auto;
     margin-left: 20px;
-    margin-right: auto;
+    margin-right: 20px;
 }
 
 nav ul{
@@ -106,7 +115,7 @@ nav .nav-links {
 
 nav ul li a{
     transition: all 0.3s ease 0s;
-    /*color: var(--text-color);*/
+    color: var(--text-color);
     font-size: 15px;
     font-weight: 200;
     text-decoration: none;
