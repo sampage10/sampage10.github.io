@@ -45,7 +45,7 @@ body.dark-mode #theme i.fa-sun {
     transform: rotate(360deg);
 }
 
-#theme {
+#theme, #linkedin, #github {
     border: 1px solid var(--text-color);
     border-radius: 5px;
     background: none;
@@ -53,7 +53,7 @@ body.dark-mode #theme i.fa-sun {
     margin-right: 20px;
 }
 
-#theme i {
+#theme i, #linkedin i, #github i {
     color: var(--text-color);
     font-size: 24px;
 }
