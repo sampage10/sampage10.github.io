@@ -45,25 +45,6 @@ body.dark-mode #theme i.fa-sun {
     transform: rotate(360deg);
 }
 
-#theme, #linkedin, #github {
-    border: 1px solid var(--text-color);
-    border-radius: 5px;
-    background: none;
-    padding: 5px 10px;
-    margin-right: 20px;
-}
-
-#theme i, #linkedin i, #github i {
-    color: var(--text-color);
-    font-size: 24px;
-}
-
-.nav-buttons {
-    display: flex;
-    gap: 5px;
-    margin-left: auto;
-}
-
 h1,h2{
     color: var(--primary-color);
 }
@@ -137,6 +118,29 @@ nav ul li a:hover{
 
 #section1, #section2, #section3 {
     scroll-margin-top: 80px;
+}
+
+#theme, #linkedin, #github {
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    background: none;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+#theme i, #linkedin i, #github i {
+    color: var(--text-color);
+    font-size: 24px;
+}
+
+#theme i:hover, #linkedin i:hover, #github i:hover { 
+    color: var(--primary-color);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
 }
 
 /*container*/
