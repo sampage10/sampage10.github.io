@@ -20,6 +20,13 @@ body {
     line-height: 1.5;
     color: var(--text-color);
     background-color: var(--light-color);
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /*dark mode*/
@@ -43,6 +50,10 @@ body.dark-mode #theme i.fa-sun {
     color: var(--primary-color);
     background-color: none;
     transform: rotate(360deg);
+}
+
+h1{
+    font-size: clamp(2rem, 5vw, 3rem);
 }
 
 h1,h2{
@@ -87,6 +98,9 @@ nav ul{
     list-style-type: none;
     display: flex;
     margin-right: 20px;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 nav ul li{
@@ -169,6 +183,10 @@ nav ul li a:hover{
     align-items: center;
 }
 
+.project-content:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
 /*content*/
 .content{
     display: flex;
@@ -215,6 +233,8 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-around;
     gap: 20px;
+
+    flex-wrap: wrap;
 }
 
 .box{
@@ -225,7 +245,42 @@ nav ul li a:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
     text-align: center;
     padding-bottom: 20px;
+
+    flex: 1 1 calc(100%-20px);
+    max-width: calc(33.333% - 20px);
 }
+
+@media (max-width: 768px) {
+    .box {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+}
+
+/* Extra small devices (phones, <576px) */
+@media (max-width: 576px) {
+    .project-content {
+        width: 100%;
+    }
+
+    body {
+        font-size: 14px; /* Smaller text for small screens */
+    }
+}
+
+/* Small devices (tablets, 576px to 768px) */
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+    }
+}
+
+/* Medium devices (desktops, 768px to 992px) */
+@media (max-width: 992px) {
+    .skills {
+        flex-direction: column;
+    }
+}
+
 
 .skills-title {
     color: var(--pop-color);
@@ -252,7 +307,9 @@ nav ul li a:hover{
 
 /*projects*/
 .project-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
@@ -312,4 +369,5 @@ footer{
     align-items: center;
     text-align: center;
     width: 100%;
+    padding: 10px 0;
 }
