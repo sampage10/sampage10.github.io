@@ -315,7 +315,7 @@ nav ul li a:hover{
     width: 100%;
     margin-bottom: 20px;
 }
-
+/*they dont display at full width?*/
 @media (min-width: 768px) {
     .project-content{
         width: 45%;
