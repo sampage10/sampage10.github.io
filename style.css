@@ -252,29 +252,28 @@ nav ul li a:hover{
 
 @media (max-width: 768px) {
     .box {
-        flex: 1 1 100%; /* Full width on small screens */
+        flex: 1 1 100%;
     }
 }
 
-/* Extra small devices (phones, <576px) */
+
 @media (max-width: 576px) {
     .project-content {
         width: 100%;
     }
 
     body {
-        font-size: 14px; /* Smaller text for small screens */
+        font-size: 14px;
     }
 }
 
-/* Small devices (tablets, 576px to 768px) */
+
 @media (max-width: 768px) {
     .project-container {
         flex-direction: column;
     }
 }
 
-/* Medium devices (desktops, 768px to 992px) */
 @media (max-width: 992px) {
     .skills {
         flex-direction: column;
