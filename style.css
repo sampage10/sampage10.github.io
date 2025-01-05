@@ -157,6 +157,46 @@ nav ul li a:hover{
     margin-left: auto;
 }
 
+/*hamburger menu for mobile*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, .1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+#hamburger {
+    background: none;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+#hamburger i {
+    color: var(--text-color);
+    font-size: 24px;
+}
+
+#hamburger i:hover { 
+    color: var(--primary-color);
+}
+
 /*container*/
 .container {
     display: flex;

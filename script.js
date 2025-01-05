@@ -11,3 +11,8 @@ function updateIcon() {
 }
 
 updateIcon();
+
+function showSidebar(){
+    const sidebar = document.getElementById('sidebar');
+    sidebar.style.display = 'flex';
+}
