@@ -12,7 +12,21 @@ function updateIcon() {
 
 updateIcon();
 
+
 function showSidebar(){
     const sidebar = document.getElementById('sidebar');
     sidebar.style.display = 'flex';
 }
+
+document.getElementById('hamburger').addEventListener('click', function(){
+    showSidebar();
+})
+
+function hideSidebar(){
+    const sidebar = document.getElementById('sidebar');
+    sidebar.style.display = 'none';
+}
+
+document.getElementById('hamburger-exit').addEventListener('click', function(){
+    hideSidebar();
+})

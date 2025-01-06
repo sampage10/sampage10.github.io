@@ -162,6 +162,7 @@ nav ul li a:hover{
     position: fixed;
     top: 0;
     right: 0;
+    left: 0;
     height: 100vh;
     width: 250px;
     z-index: 999;
@@ -170,9 +171,11 @@ nav ul li a:hover{
     box-shadow: -10px 0 10px rgba(0, 0, 0, .1);
     display: none;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
 }
+
+
 
 .sidebar li{
     width: 100%;
@@ -180,6 +183,27 @@ nav ul li a:hover{
 
 .sidebar a{
     width: 100%;
+}
+.menu-btn {
+    display: none;
+}
+#hamburger {
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+    #hamburger {
+        display: inline-block;
+    }
+    .sidebar{
+        width: 100%;
+    }
 }
 
 #hamburger {
@@ -194,6 +218,56 @@ nav ul li a:hover{
 }
 
 #hamburger i:hover { 
+    color: var(--primary-color);
+}
+
+#hamburger-exit {
+    background: none;
+    text-align: center;
+}
+
+#hamburger-exit i {
+    color: var(--text-color);
+    font-size: 48px;
+}
+
+#hamburger-exit i:hover { 
+    color: var(--primary-color);
+}
+
+
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between links */
+}
+
+.sidebar ul li a {   
+    font-size: 24px;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+
+/* Icons section */
+.sidebar .nav-buttons {
+    display: flex;
+    justify-content: space-evenly; /* Evenly space icons */
+    gap: 20px; /* Space between icons */
+    width: 100%; /* Full-width row for icons */
+    padding-top: 20px; /* Add spacing above icons */
+}
+
+.sidebar .nav-buttons a {
+    color: var(--text-color);
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar .nav-buttons a:hover {
     color: var(--primary-color);
 }
 

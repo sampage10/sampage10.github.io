@@ -15,30 +15,48 @@
                     <a href="index.html">
                         <img src="images/logo.JPEG" alt="logo" id="logo">
                     </a> 
-                    <ul class="sidebar">
-                        <li><a href="#section1">About</a></li>
-                        <li><a href="#section2">Projects</a></li>
-                        <li><a href="#section3">Contact</a></li>
-                    </ul>               
-                    <ul class="nav-links">
-                        <li><a href="#section1">About</a></li>
-                        <li><a href="#section2">Projects</a></li>
-                        <li><a href="#section3">Contact</a></li>
-                        <a href="#" id="hamburger" onclick=showSidebar()>
-                            <i class="fa-solid fa-bars"></i>
+<!--mobile friendly sidebar nav -->
+                    <div class="sidebar" id="sidebar">
+                        <a href="#" id="hamburger-exit">
+                            <i class="fa-solid fa-xmark"></i>
                         </a>
+                        <ul>
+                            <li><a href="#section1">About</a></li>
+                            <li><a href="#section2">Projects</a></li>
+                            <li><a href="#section3">Contact</a></li>
+                        </ul>
+                        <div class="nav-buttons">
+                            <a href="https://www.linkedin.com/in/sam-page-6b6987264/" id="linkedin">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/sampage10" id="github">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <button id="theme">
+                                <i class="fa-regular fa-moon"></i>
+                            </button>
+                        </div>
+                    </ul>   
+<!--desktop nav -->            
+                    <ul class="nav-links">
+                        <li class="hideOnMobile"><a href="#section1">About</a></li>
+                        <li class="hideOnMobile"><a href="#section2">Projects</a></li>
+                        <li class="hideOnMobile"><a href="#section3">Contact</a></li>
                     </ul>
                 </div>
                 <div class="nav-buttons">
-                    <a href="https://www.linkedin.com/in/sam-page-6b6987264/" id="linkedin">
+                    <a href="https://www.linkedin.com/in/sam-page-6b6987264/" id="linkedin" class="hideOnMobile">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/sampage10" id="github">
+                    <a href="https://github.com/sampage10" id="github" class="hideOnMobile">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <button id="theme">
+                    <button id="theme"  class="hideOnMobile">
                         <i class="fa-regular fa-moon"></i>
                     </button>
+                    <a href="#" id="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
                 </div>
                 
             </nav>
@@ -52,7 +70,6 @@
                 <h2>CS Student @ UNC Charlotte</h2>
                 <div class="buttons-home">
                     <a href="https://www.linkedin.com/in/sam-page-6b6987264/" target="_blank" class="button">LinkedIn</a>
-                    <!--fix resume link-->
                     <a href="Resume0924.pdf" target="_blank" class="button">Resume</a>
                 </div>
 
@@ -172,7 +189,7 @@
         </div>
         
         <footer>
-            <p class="font-sm center-text">&copy;2024 SPAGE</p>
+            <p class="font-sm center-text">&copy;2025 SPAGE</p>
         </footer>
         
     </body>
