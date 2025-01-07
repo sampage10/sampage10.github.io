@@ -241,6 +241,7 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 20px; /* Space between links */
 }
 
@@ -422,12 +423,8 @@ nav ul li a:hover{
 .project-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
     gap: 20px;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    margin-bottom: 20px;
 }
 /*they dont display at full width?*/
 @media (min-width: 768px) {
