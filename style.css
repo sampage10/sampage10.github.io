@@ -106,7 +106,7 @@ nav ul{
 nav ul li{
     display: inline;
     padding: 0 10px;
-    gap: 20px;
+    gap: 18px;
     margin: 0;
 }
 
@@ -117,7 +117,7 @@ nav .nav-links {
 nav ul li a{
     transition: all 0.3s ease 0s;
     color: var(--text-color);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 200;
     text-decoration: none;
 }
@@ -139,7 +139,7 @@ nav ul li a:hover{
     border-radius: 5px;
     background: none;
     padding: 5px 10px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 #theme i, #linkedin i, #github i {
@@ -243,6 +243,7 @@ nav ul li a:hover{
     align-items: center;
     text-align: center;
     gap: 20px; /* Space between links */
+    padding: 0;
 }
 
 .sidebar ul li a {   
@@ -255,21 +256,9 @@ nav ul li a:hover{
 /* Icons section */
 .sidebar .nav-buttons {
     display: flex;
-    justify-content: space-evenly; /* Evenly space icons */
-    gap: 20px; /* Space between icons */
-    width: 100%; /* Full-width row for icons */
-    padding-top: 20px; /* Add spacing above icons */
-}
-
-.sidebar .nav-buttons a {
-    color: var(--text-color);
-    font-size: 24px; /* Adjust icon size */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.sidebar .nav-buttons a:hover {
-    color: var(--primary-color);
+    justify-content: center;  
+    gap: 20px;
+    align-items: center;
 }
 
 /*container*/
