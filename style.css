@@ -274,7 +274,6 @@ nav ul li a:hover{
     margin-top: 150px;
     display: flex;
     flex-direction: column;
-    /*height: 100vh;*/
     text-align: center;
     padding: 10px;
 }
