@@ -37,8 +37,7 @@ body.dark-mode {
     --light-color: #000000;
     --pop-color: #3E8DE3;
     --text-color: #d3d3d3;
-    --border-color: #555;
-    /*test*/
+    --border-color: #555
     --hover-color: #000080;
 }
 
