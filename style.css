@@ -33,7 +33,6 @@ img {
 
 body.dark-mode {
     --primary-color: #fff;
-    /*--primary-bg-color: #d3d3d3;*/
     --light-color: #000000;
     --pop-color: #3E8DE3;
     --text-color: #d3d3d3;
