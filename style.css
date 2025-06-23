@@ -17,11 +17,6 @@ body.dark-mode {
   --hover-color: #000080;
 }
 
-body.dark-mode {
-  background-color: var(--light-color);
-  color: var(--text-color);
-}
-
 body.dark-mode #logo {
   content: url('images/logo-dark.png');
 }
@@ -31,6 +26,17 @@ body.dark-mode #theme i.fa-sun {
   transform: rotate(360deg);
 }
 
+body, .container, .container-fluid, .card, section, footer {
+  background-color: var(--light-color) !important;
+  color: var(--text-color) !important;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .card {
+  background-color: #111;
+  border-color: var(--border-color);
+}
+
 /* ===== Base Styles ===== */
 body {
   font-family: Helvetica, sans-serif;
@@ -38,8 +44,15 @@ body {
   line-height: 1.5;
   background-color: var(--light-color);
   color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.section-bg {
+  background-color: var(--light-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 
 img {
   max-width: 100%;
@@ -62,8 +75,24 @@ header {
   border-bottom: 1px solid var(--border-color);
 }
 
-/* ===== Navbar Buttons ===== */
+.navbar a,
+.navbar i,
+.navbar .navbar-toggler-icon {
+  color: var(--primary-color);
+}
 
+/* ===== Navbar Buttons ===== */
+header, .navbar {
+  background-color: var(--light-color);
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar a,
+.navbar i,
+.navbar .navbar-toggler-icon {
+  color: var(--primary-color);
+}
 
 #theme, #linkedin, #github {
   border: 1px solid var(--text-color);
@@ -82,63 +111,6 @@ header {
   color: var(--primary-color);
 }
 
-/* ===== Hamburger & Sidebar (Mobile) ===== */
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: 999;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, .1);
-  display: none;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sidebar ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-  padding: 0;
-}
-
-.sidebar ul li a {
-  font-size: 24px;
-  padding: 10px 20px;
-  transition: color 0.3s ease;
-}
-
-.sidebar .nav-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-}
-
-#hamburger, #hamburger-exit {
-  background: none;
-  padding: 5px 10px;
-  margin-right: 20px;
-}
-
-#hamburger i, #hamburger-exit i {
-  color: var(--text-color);
-  font-size: 24px;
-}
-
-#hamburger-exit i {
-  font-size: 48px;
-}
-
-#hamburger i:hover, #hamburger-exit i:hover {
-  color: var(--primary-color);
-}
 
 /* ===== Sections ===== */
 #section1, #section2, #section3 {
@@ -158,69 +130,28 @@ header {
   margin-bottom: 20px;
 }
 
-.buttons-home .button {
-  background-color: var(--pop-color);
-  color: var(--light-color);
-  padding: 10px 24px;
-  margin: 10px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.buttons-home .button:hover {
-  background-color: var(--text-color);
-}
-
 /* ===== Skills ===== */
-.skills-title {
-  color: var(--pop-color);
-  text-align: center;
-  padding: 10px;
-  margin: 0;
+.card-body ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-.skills-content {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+.card-title {
   text-align: center;
-}
-
-.skills-content li {
-  padding: 5px 10px;
-  background-color: var(--border-color);
-  border-radius: 20px;
-  color: var(--text-color);
-  margin: 5px;
-  display: inline-block;
 }
 
 /* ===== Projects ===== */
-.project-content:hover {
-  transform: scale(1.03);
-  transition: all 0.3s ease-in-out;
-}
 
-.project-content img {
-  max-height: 200px;
-  object-fit: cover;
-}
 
 /* ===== Contact ===== */
-.contact-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin: 20px 0;
-}
-
 .contact-link {
   color: var(--pop-color);
   font-size: 2em;
+  transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-  color: var(--text-color);
+  color: var(--hover-color);
 }
 
 /* ===== Footer ===== */
