@@ -131,6 +131,15 @@ header, .navbar {
 }
 
 /* ===== Skills ===== */
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
 .card-body ul {
   list-style: none;
   padding-left: 0;
