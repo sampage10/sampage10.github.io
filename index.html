@@ -9,40 +9,42 @@
         <link rel="icon" type="image/x-icon" href="images/logo.JPEG">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
+        <script src="script.js" defer></script>
     </head>
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <header>
-        <nav class="navbar navbar-expand-lg px-4">
-            <a class="navbar-brand" href="index.html">
-                <img id="logo" src="images/logo.JPEG" alt="Logo" width="40" height="40">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav me-3">
-                    <li class="nav-item"><a class="nav-link" href="#section1">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#section2">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#section3">Contact</a></li>
-                </ul>
-                <div class="d-flex align-items-center gap-2">
-                    <a href="https://www.linkedin.com/in/sam-page-6b6987264/" class="text-light">
-                    <i class="fa-brands fa-linkedin fa-lg"></i>
-                    </a>
-                    <a href="https://github.com/sampage10" class="text-light">
-                    <i class="fa-brands fa-github fa-lg"></i>
-                    </a>
-                    <button id="theme" class="btn btn-outline-light btn-sm">
-                    <i class="fa-regular fa-moon"></i>
-                    </button>
+        
+        <header>
+            <nav class="navbar navbar-expand-lg px-4">
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo" src="images/logo.JPEG" alt="Logo" width="40" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav me-3">
+                        <li class="nav-item"><a class="nav-link" href="#section1">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section2">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section3">Contact</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="https://www.linkedin.com/in/sam-page-6b6987264/" class="text-light">
+                            <i class="fa-brands fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://github.com/sampage10" class="text-light">
+                            <i class="fa-brands fa-github fa-lg"></i>
+                        </a>
+                        <button id="theme" class="btn btn-outline-light btn-sm">
+                            <i class="fa-regular fa-moon"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-
+        <!--Landing Page-->
         <div class="container">
             <div class="container-fluid d-flex flex-column justify-content-center align-items-center text-center vh-100">
                 <img src="images/profile.jpg" alt="Profile Picture" class="rounded-circle mb-3" width="150">
@@ -55,155 +57,214 @@
                 </div>
             </div>
 
-            <section id="section1" class="section-bg py-5">
+            <!-- Skills -->
+            <section id="skills" class="section-bg py-5">
                 <div class="container">
                     <h2>Skills</h2>
-                        <div class="row">
-                            <div class="col-md-4 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Languages</h5>
+                    <div class="row">
 
-                                            <div class="skill-header">
-                                                <span class="skill-name">Java</span>
-                                                <span class="skill-meta">Advanced | 3 yrs</span>
-                                            </div>
-                                            <div class="progress mb-2">
-                                                <div class="progress-bar bg-primary" style="width: 90%"></div>
-                                            </div>
+                        <!-- Frontend -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-code"></i>Frontend</h5>
 
-                                            <div class="skill-header">
-                                                <span class="skill-name">Python</span>
-                                                <span class="skill-meta">Intermediate | 2 yrs</span>
-                                            </div>
-                                            <div class="progress mb-2">
-                                                <div class="progress-bar bg-primary" style="width: 90%"></div>
-                                            </div>
-
-                                            <div class="skill-header">
-                                                <span class="skill-name">JavaScript</span>
-                                                <span class="skill-meta">Intermediate | 2 yrs</span>
-                                            </div>
-                                            <div class="progress mb-2">
-                                                <div class="progress-bar bg-primary" style="width: 90%"></div>
-                                            </div>
-
-                                            <div class="skill-header">
-                                                <span class="skill-name">HTML/CSS</span>
-                                                <span class="skill-meta">Advanced | 3 yrs</span>
-                                            </div>
-                                            <div class="progress mb-2">
-                                                <div class="progress-bar bg-primary" style="width: 90%"></div>
-                                            </div>
-
-                                            <div class="skill-header">
-                                                <span class="skill-name">SQL</span>
-                                                <span class="skill-meta">Advanced | 3 yrs</span>
-                                            </div>
-                                            <div class="progress mb-2">
-                                                <div class="progress-bar bg-primary" style="width: 90%"></div>
-                                            </div>
-
-                                            <div class="skill-header">
-                                                <span class="skill-name">C</span>
-                                                <span class="skill-meta">Beginner | 1 yrs</span>
-                                            </div>
-                                            <div class="progress mb-2">
-                                                <div class="progress-bar bg-primary" style="width: 90%"></div>
-                                            </div>
-
+                                    <div class="skill-header">
+                                        <span class="skill-name">HTML / CSS</span>
+                                        <span class="skill-meta">Advanced · 3 yrs</span>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Frameworks</h5>
-                                        <div class="skill-header">
-                                            <span class="skill-name">React</span>
-                                            <span class="skill-meta">Intermediate · 1.5 yrs</span>
-                                        </div>
-                                        <div class="progress mb-2"><div class="progress-bar bg-success" style="width: 75%"></div></div>
-
-                                        <div class="skill-header">
-                                            <span class="skill-name">Bootstrap</span>
-                                            <span class="skill-meta">Advanced · 2 yrs</span>
-                                        </div>
-                                        <div class="progress mb-2"><div class="progress-bar bg-success" style="width: 85%"></div></div>
-
-                                        <div class="skill-header">
-                                            <span class="skill-name">pandas</span>
-                                            <span class="skill-meta">Intermediate · 2 yrs</span>
-                                        </div>
-                                        <div class="progress mb-2"><div class="progress-bar bg-success" style="width: 70%"></div></div>
-
-                                        <div class="skill-header">
-                                            <span class="skill-name">Node.js</span>
-                                            <span class="skill-meta">Intermediate · 1 yr</span>
-                                        </div>
-                                        <div class="progress mb-2"><div class="progress-bar bg-success" style="width: 65%"></div></div>
-
-                                        <div class="skill-header">
-                                            <span class="skill-name">ExpressJS</span>
-                                            <span class="skill-meta">Intermediate · 1 yr</span>
-                                        </div>
-                                        <div class="progress"><div class="progress-bar bg-success" style="width: 60%"></div></div>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-primary" style="width: 90%"></div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Tools</h5>
-                                        <div class="skill-header">
-                                            <span class="skill-name">Git</span>
-                                            <span class="skill-meta">Advanced · 3 yrs</span>
-                                        </div>
-                                        <div class="progress mb-2"><div class="progress-bar bg-info" style="width: 85%"></div></div>
 
-                                        <div class="skill-header">
-                                            <span class="skill-name">VSCode</span>
-                                            <span class="skill-meta">Advanced · 3 yrs</span>
-                                        </div>
-                                        <div class="progress mb-2"><div class="progress-bar bg-info" style="width: 90%"></div></div>
+                                    <div class="skill-header">
+                                        <span class="skill-name">JavaScript</span>
+                                        <span class="skill-meta">Intermediate · 2 yrs</span>
+                                    </div>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-primary" style="width: 75%"></div>
+                                    </div>
 
-                                        <div class="skill-header">
-                                            <span class="skill-name">GitHub</span>
-                                            <span class="skill-meta">Advanced · 3 yrs</span>
-                                        </div>
-                                        <div class="progress mb-2"><div class="progress-bar bg-info" style="width: 85%"></div></div>
+                                    <div class="skill-header">
+                                        <span class="skill-name">React</span>
+                                        <span class="skill-meta">Intermediate · 1.5 yrs</span>
+                                    </div>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-primary" style="width: 70%"></div>
+                                    </div>
 
-                                        <div class="skill-header">
-                                            <span class="skill-name">mySQL</span>
-                                            <span class="skill-meta">Intermediate · 2 yrs</span>
-                                        </div>
-                                        <div class="progress mb-2"><div class="progress-bar bg-info" style="width: 70%"></div></div>
-
-                                        <div class="skill-header">
-                                            <span class="skill-name">MongoDB</span>
-                                            <span class="skill-meta">Intermediate · 1 yr</span>
-                                        </div>
-                                        <div class="progress mb-2"><div class="progress-bar bg-info" style="width: 65%"></div></div>
-
-                                        <div class="skill-header">
-                                            <span class="skill-name">Jupyter Notebook</span>
-                                            <span class="skill-meta">Intermediate · 2 yrs</span>
-                                        </div>
-                                        <div class="progress mb-2"><div class="progress-bar bg-info" style="width: 75%"></div></div>
-
-                                        <div class="skill-header">
-                                            <span class="skill-name">Matplotlib</span>
-                                            <span class="skill-meta">Intermediate · 2 yrs</span>
-                                        </div>
-                                        <div class="progress"><div class="progress-bar bg-info" style="width: 70%"></div></div>
-
-                                    </div>  
+                                    <div class="skill-header">
+                                        <span class="skill-name">Bootstrap</span>
+                                        <span class="skill-meta">Advanced · 2 yrs</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" style="width: 85%"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Backend -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-server"></i>Backend</h5>
+
+                                <div class="skill-header">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-meta">Advanced · 3 yrs</span>
+                                </div>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-success" style="width: 85%"></div>
+                                </div>
+
+                                <div class="skill-header">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-meta">Intermediate · 2 yrs</span>
+                                </div>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-success" style="width: 75%"></div>
+                                </div>
+
+                                <div class="skill-header">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-meta">Intermediate · 1 yr</span>
+                                </div>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-success" style="width: 65%"></div>
+                                </div>
+
+                                <div class="skill-header">
+                                    <span class="skill-name">Express.js</span>
+                                    <span class="skill-meta">Intermediate · 1 yr</span>
+                                </div>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-success" style="width: 60%"></div>
+                                </div>
+
+                                <div class="skill-header">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-meta">Advanced · 3 yrs</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Data / Machine Learning -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-brain"></i>Data / Machine Learning</h5>
+
+                                    <div class="skill-header">
+                                        <span class="skill-name">Pandas</span>
+                                        <span class="skill-meta">Intermediate · 2 yrs</span>
+                                    </div>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                    </div>
+
+                                    <div class="skill-header">
+                                        <span class="skill-name">NumPy</span>
+                                        <span class="skill-meta">Intermediate · 2 yrs</span>
+                                    </div>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                    </div>
+
+                                    <div class="skill-header">
+                                        <span class="skill-name">Matplotlib / Seaborn</span>
+                                        <span class="skill-meta">Intermediate · 2 yrs</span>
+                                    </div>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                    </div>
+
+                                    <div class="skill-header">
+                                        <span class="skill-name">Scikit-learn</span>
+                                        <span class="skill-meta">Beginner · 1 yr</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cloud / DevOps -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-cloud"></i>Cloud / DevOps</h5>
+
+                                    <div class="skill-header">
+                                        <span class="skill-name">Git & GitHub</span>
+                                        <span class="skill-meta">Advanced · 3 yrs</span>
+                                    </div>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-info" style="width: 85%"></div>
+                                    </div>
+
+                                    <div class="skill-header">
+                                        <span class="skill-name">CI/CD</span>
+                                        <span class="skill-meta">Beginner · 1 yr</span>
+                                    </div>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-info" style="width: 55%"></div>
+                                    </div>
+
+                                    <div class="skill-header">
+                                        <span class="skill-name">Docker</span>
+                                        <span class="skill-meta">Beginner · 1 yr</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tools / Misc -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-wrench"></i>Tools / Misc</h5>
+
+                                    <div class="skill-header">
+                                        <span class="skill-name">VS Code / IntelliJ</span>
+                                        <span class="skill-meta">Advanced · 3 yrs</span>
+                                    </div>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-secondary" style="width: 90%"></div>
+                                    </div>
+
+                                    <div class="skill-header">
+                                        <span class="skill-name">Agile / Scrum</span>
+                                        <span class="skill-meta">1+ yr</span>
+                                    </div>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-secondary" style="width: 65%"></div>
+                                    </div>
+
+                                    <div class="skill-header">
+                                        <span class="skill-name">Debugging & Problem Solving</span>
+                                        <span class="skill-meta">Strong</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-secondary" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
+            <!-- Projects -->
             <section id="section2" class="py-5">
                 <div class="container">
                     <h1 class="mb-4">Projects</h1>
@@ -287,10 +348,86 @@
                             </div>
                         </div>
                     </div>
-                <h1>About Me</h1>
-                <p>My name is Sam Page I am a senior at The University of North Carolina at Charlotte. I am currently pursuing a Bachelors in Computer Science with a concentration in Software Engineering. I have experience in web development and databases. I have a passion for solving problems ethically and efficiently. I am always looking for new ways to learn and stay up to date on emerging technologies.</p>
+            </section>
 
-                <section id="section3" class="section-bg py-5 text-center">
+            <!-- About -->
+            <section id="about" class="py-5">
+                    <div class="container">
+                        <h1 class="mb-4 text-center">About Me</h1>
+                        <div class="row g-4">
+
+                        <!-- Card 1: Location & Availability -->
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-location-dot fa-2x mb-3 text-primary"></i>
+                                <h5 class="card-title">Location & Availability</h5>
+                                <p class="card-text">
+                                Based in <strong>Charlotte, NC</strong>.  
+                                Open to <strong>full-time software engineering roles</strong> — remote, hybrid, or on-site.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: My Story -->
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-user-graduate fa-2x mb-3 text-success"></i>
+                                <h5 class="card-title">My Story</h5>
+                                <p class="card-text">
+                                I graduated from <strong>UNC Charlotte</strong> with a B.S. in Computer Science (Software Engineering).  
+                                I enjoy building full-stack applications, solving problems, and learning emerging technologies.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Send Me a Message -->
+                        <div class="col-12">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fa-solid fa-envelope fa-2x mb-2 text-danger"></i>
+                                <h5 class="card-title">Send Me a Message</h5>
+                            </div>
+
+                            <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+                                <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+
+                                <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+
+                                <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" name="subject">
+                                </div>
+
+                                <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                                </div>
+
+                                <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                        </div>
+
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Contact -->    
+            <section id="section3" class="section-bg py-5 text-center">
                     <div class="container">
                         <h1>Contact</h1>
                         <div class="d-flex justify-content-center gap-4 mt-3">
@@ -305,14 +442,14 @@
                             </a>
                         </div>
                     </div>
-                </section>
-            </div>
+            </section>
+
+                </div>
         </div>
         
         <footer>
             <p class="font-sm center-text">&copy;2025 SPAGE</p>
         </footer>
-        
+
     </body>
-    <script src="script.js"></script>
 </html>
