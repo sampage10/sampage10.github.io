@@ -1,31 +1,21 @@
-/* v1 colors*/
-body.dark-mode {
-  --primary-color: #ffffff;
-  --light-color: #000000;
-  --text-color: #d3d3d3;
-  --border-color: #555;
-  --hover-color: #000080;
-}
-
-
-
 /* ===== Variables ===== */
 :root {
-  --primary-color: #000000;
-  --light-color: #ffffff;
-  --pop-color: #3E8DE3;
-  --text-color: #555;
-  --border-color: #d3d3d3;
-  --hover-color: #000080;
+  --background-color: #f5f7fa;         /* soft light gray-blue background */
+  --card-background-color: #ffffff;    /* crisp white cards */
+  --text-color-headings: #0f1115;      /* almost black for max readability */
+  --text-color-p: #4a5568;             /* cool gray paragraphs */
+  --border-color: #d1d5db;             /* subtle light gray borders */
+  --pop-color: #009ecf;                /* complimentary teal/cyan accent */
 }
 
 /* ===== Dark Mode ===== */
 body.dark-mode {
-  --primary-color: #8892a6; /*nav color?*/
-  --light-color: #0f1115; /*background*/
-  --text-color: #d3d3d3; /*headings*/
-  --border-color: #555; 
-  
+  --background-color: #0f1115;
+  --card-background-color: #131721; 
+  --text-color-headings: #e8ecf2;
+  --text-color-p: #8892a6;
+  --border-color: #1a1f2e; 
+  --pop-color: #1bd9ff;  
 }
 
 body.dark-mode #logo {
@@ -37,53 +27,35 @@ body.dark-mode #theme i.fa-sun {
   transform: rotate(360deg);
 }
 
-body, .container, .container-fluid, .card, section, footer {
-  background-color: var(--light-color) !important;
-  color: var(--text-color) !important;
-  transition: all 0.3s ease;
-}
-
-body.dark-mode .card {
-  background-color: #111;
-  border-color: var(--border-color);
-}
-
 /* ===== Base Styles ===== */
-
-/*change this*/
-.fas{
-  margin-right: 8px;
-}
-
 body {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: var(--light-color);
-  color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.section-bg {
-  background-color: var(--light-color);
-  color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-
-img {
-  max-width: 100%;
-  height: auto;
+  background-color: var(--background-color);
+  color: var(--text-color-p);
+  transition: all 0.3s ease;
 }
 
 h1, h2 {
-  color: var(--primary-color);
+  color: var(--text-color-headings);
 }
 
 h1 {
   font-size: clamp(2rem, 5vw, 3rem);
 }
 
+.card {
+  background-color: var(--card-background-color);
+  border-color: var(--border-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Navbar ===== */
 header {
   position: sticky;
   top: 0;
@@ -95,24 +67,17 @@ header {
 .navbar a,
 .navbar i,
 .navbar .navbar-toggler-icon {
-  color: var(--primary-color);
+  color: var(--text-color-headings);
 }
 
-/* ===== Navbar Buttons ===== */
 header, .navbar {
-  background-color: var(--light-color);
+  background-color: var(--background-color);
   transition: background-color 0.3s ease;
   border-bottom: 1px solid var(--border-color);
 }
 
-.navbar a,
-.navbar i,
-.navbar .navbar-toggler-icon {
-  color: var(--primary-color);
-}
-
 #theme, #linkedin, #github {
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--text-color-p);
   border-radius: 5px;
   background: none;
   padding: 5px 10px;
@@ -120,12 +85,12 @@ header, .navbar {
 }
 
 #theme i, #linkedin i, #github i {
-  color: var(--text-color);
+  color: var(--text-color-p);
   font-size: 24px;
 }
 
 #theme i:hover, #linkedin i:hover, #github i:hover {
-  color: var(--primary-color);
+  color: var(--pop-color);
 }
 
 
@@ -135,11 +100,6 @@ header, .navbar {
 }
 
 /* ===== Homepage ===== */
-.home-page {
-  text-align: center;
-  padding: 100px 0;
-}
-
 .profile-pic {
   width: 120px;
   height: 120px;
@@ -164,6 +124,12 @@ header, .navbar {
 
 .card-title {
   text-align: center;
+}
+
+/*change this*/
+.fas{
+  margin-right: 8px;
+  color: var(--pop-color);
 }
 
 /* ===== Projects ===== */
