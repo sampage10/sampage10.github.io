@@ -1,3 +1,14 @@
+/* v1 colors*/
+body.dark-mode {
+  --primary-color: #ffffff;
+  --light-color: #000000;
+  --text-color: #d3d3d3;
+  --border-color: #555;
+  --hover-color: #000080;
+}
+
+
+
 /* ===== Variables ===== */
 :root {
   --primary-color: #000000;
@@ -10,11 +21,11 @@
 
 /* ===== Dark Mode ===== */
 body.dark-mode {
-  --primary-color: #ffffff;
-  --light-color: #000000;
-  --text-color: #d3d3d3;
-  --border-color: #555;
-  --hover-color: #000080;
+  --primary-color: #8892a6; /*nav color?*/
+  --light-color: #0f1115; /*background*/
+  --text-color: #d3d3d3; /*headings*/
+  --border-color: #555; 
+  
 }
 
 body.dark-mode #logo {
